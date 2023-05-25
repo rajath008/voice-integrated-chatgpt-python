@@ -12,7 +12,7 @@ load_dotenv()
 completion = openai.Completion()
 
 def ReplyIt(question,chat_log = None):
-        
+
     prompt = f'{chat_log}You : {question}\nJarvis : '
     response = completion.create(
         model = "text-davinci-003",
